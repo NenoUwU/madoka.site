@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../img/ff.jpeg');
+    background-repeat: repeat;
+    background-size: 300px;
+    color: #4a2c38;
+    line-height: 1.6;
+}
+header {
+    background-color: rgba(255, 224, 235, 0.92);
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 3px solid #f48fb1;
+    animation: fadeInDown 1s ease;
+}
+header h1 {
+    font-size: 2.2rem;
+    color: #c2185b;
+    margin-bottom: 8px;
+}
+main {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+.intro {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+.intro h2, .characters h2 {
+    color: #ad1457;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.92);
+    width: 260px;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #f8bbd0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(194, 24, 91, 0.2);
+}
+.card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #f06292;
+    margin-bottom: 12px;
+}
+.card h3 {
+    color: #880e4f;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 0.95rem;
+}
+footer {
+    background-color: rgba(255, 224, 235, 0.92);
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-top: 2px solid #f48fb1;
+    font-size: 0.9rem;
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
